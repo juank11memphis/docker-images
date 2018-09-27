@@ -1,4 +1,4 @@
-FROM node:8.11.4 as app
+FROM node:8.11.4
 # Global install yarn package manager
 RUN apt-get update && apt-get install -y curl apt-transport-https && \
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
